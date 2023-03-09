@@ -1,4 +1,4 @@
-package com.example.wordle;
+package com.api.wordle;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

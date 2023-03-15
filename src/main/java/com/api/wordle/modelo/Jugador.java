@@ -1,5 +1,6 @@
 package com.api.wordle.modelo;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -31,6 +32,7 @@ public class Jugador {
     @Column(name="Puntos", nullable = false)
     private Integer Puntos = 0;
 
+    @JsonBackReference
     @ManyToOne
     @NotFound(action = NotFoundAction.IGNORE)
     @JoinColumn(name = "Equipo_idEquipo")
